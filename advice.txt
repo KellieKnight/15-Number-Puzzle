@@ -1,0 +1,29 @@
+window.open
+window.open = cordova.InAppBrowser.open;
+
+https://cordova.apache.org/docs/en/2.7.0/cordova/inappbrowser/inappbrowser.html
+var ref = window.open('http://apache.org', '_blank', 'location=yes');
+ref.addEventListener('loadstart', function() { alert(event.url); });
+
+
+Massimo DiPierro	3:57 PM
+window.open
+window.open = cordova.InAppBrowser.open;
+https://cordova.apache.org/docs/en/2.7.0/cordova/inappbrowser/inappbrowser.html
+var ref = window.open('http://apache.org', '_blank', 'location=yes');
+ref.addEventListener('loadstart', function() { alert(event.url); });
+var open = cordova.inAppBrowser.open;
+var w = open(.....);
+w.executeScript({code: "1+1"},function(data){alert(data);});
+
+
+insert_before
+Idea: aggiungi un iframe con source:
+
+src=https://mio.server.com?source=window.location
+
+That serves buttons to vote, and can vote.
+
+-----
+
+https://github.com/EddyVerbruggen/cordova-plugin-googleplus

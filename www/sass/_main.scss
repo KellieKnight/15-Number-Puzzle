@@ -1,0 +1,28 @@
+.colorful {
+  color: $clrHilight;
+}
+.app {
+	margin: 10px;
+
+	.topbar {
+		// border-bottom: 1px solid $clrBorders;
+	}
+
+	.chessboard {
+		
+
+		table {
+			
+			width: 100%;
+			
+
+			td {
+				
+				border: 2px solid black;
+			}
+		}
+
+		margin: 20px;
+		border: 3px solid black;
+	}
+}
